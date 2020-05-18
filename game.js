@@ -28,7 +28,6 @@ class Game {
       cell.mark(this.activePlayer);
       if (this.checkForWin(cell)) {
         this.gameOver(`${cell.owner.name} wins!`);
-        this.ready = false;
       } else if (this.checkDraw()) {
         this.gameOver("Game over! It's a draw!");
       } else {
@@ -41,6 +40,7 @@ class Game {
     const messageDiv = document.querySelector("#message");
     messageDiv.style.display = "block";
     messageDiv.textContent = message;
+    this.ready = false;
   }
 
   checkDraw() {
