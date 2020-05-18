@@ -1,0 +1,68 @@
+body {
+  background-color: #303853;
+  margin: 0;
+  padding: 0;
+}
+
+#start-btn {
+  width: 250px;
+  height: 70px;
+  background-color: rgb(49, 199, 149);
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: none;
+  font-size: 30px;
+  font-family: "Fredoka One", cursive;
+}
+
+#board {
+  position: relative;
+  width: 616px;
+  height: 616px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #5fcf80;
+  border-radius: 7px;
+  /* float: left; */
+  z-index: 15;
+  box-sizing: border-box;
+  display: none;
+}
+
+.cell {
+  position: relative;
+  width: 199px;
+  height: 199px;
+  margin: 0px !important;
+  border: solid;
+  border-width: 0.5px;
+  border-color: black;
+  display: table-cell;
+  font-family: 'Rock Salt', cursive;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.row {
+  height: 200px;
+}
+
+#message {
+  position: absolute;
+  display: none;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  color: #5fcf80;
+}
